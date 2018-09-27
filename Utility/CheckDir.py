@@ -1,0 +1,1 @@
+#TODO: função para checar existência da pasta de resultados

@@ -2,6 +2,7 @@
 import socket
 from colorama import Fore, Style
 from Core import Scan
+from Utility import Parsers
 
 
 def main():
@@ -15,8 +16,13 @@ def main():
     "- A preguiça, o ócio e a recreação revigoravam as energias para a batalha."
                                                       """)
     print("Palamedes v0.2 - Teste segmentacao")
+
     #erro 1 - falta de argumento
-    if len(sys.argv) < 2:
+    args = Parsers.getArgs()
+
+    #TODO:
+
+    if args.files < 2:
 
         ipv = filetoVector(sys.argv[1])
         
@@ -26,7 +32,7 @@ def main():
         #validateIp(ipv)
 
         print(p)
-        exit()
+
     else:
         print(Fore.RED + "\n[ERRO] - " + Style.RESET_ALL +"Insira um arquivo de texto")
         print("         Ex: python palamedes.py scope.txt")
@@ -34,7 +40,6 @@ def main():
 
 if __name__ == '__main__':
   main()
-  Scan.testando()
 
   
   
