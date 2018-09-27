@@ -1,13 +1,10 @@
-import socket
+from re import match
 
 # encontrar melhor jeito de validar se uma string é um IP
 def validate(addr):
-    try:
-        socket.inet_aton(addr)
-        # legal
-        print("IP " + addr)
-        return 1
-    except socket.error:
-        # Not legal
-        print("erro - IP Invalido")
-        return 0
+    pattern = r"\b(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b"
+
+    if match(pattern, addr):
+        return True
+    else:
+        return False
