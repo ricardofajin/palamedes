@@ -1,26 +1,8 @@
 #/usr/bin/python3
-import sys
 import socket
-from colorama import Fore, Back, Style 
+from colorama import Fore, Style
+from Core import Scan
 
-def filetoVector(file):
-    ipv = []
-    escopo = open(file,'r')
-    for ip in escopo.readlines():
-        ipv.append(ip.replace('\n',''))
-    return(ipv)    
-        
-def validateIp(addr):
-    
-    try:
-        socket.inet_aton(addr)
-        # legal
-        print("IP "+ addr)
-        return 1
-    except socket.error:
-        # Not legal
-        print("erro - IP Invalido")
-        return 0
 
 def main():
     print("""
@@ -32,27 +14,30 @@ def main():
                                                           
     "- A preguiça, o ócio e a recreação revigoravam as energias para a batalha."
                                                       """)
-    print("Palamedes v0.1 - Teste segmentacao")
-    # erro 1 - falta de argumento
-    if len(sys.argv) == 2:
+    print("Palamedes v0.2 - Teste segmentacao")
+    #erro 1 - falta de argumento
+    if len(sys.argv) < 2:
+
         ipv = filetoVector(sys.argv[1])
         
         print(Fore.GREEN + "Escopo:" + Style.RESET_ALL)
         print(ipv)
-        # validar o IP
-        # validateIp(ipv)
+        #validar o IP
+        #validateIp(ipv)
 
         print(p)
         exit()
     else:
-        print(Fore.RED + "\n[ERRO] - " + Style.RESET_ALL + "Insira um arquivo de texto")
+        print(Fore.RED + "\n[ERRO] - " + Style.RESET_ALL +"Insira um arquivo de texto")
         print("         Ex: python palamedes.py scope.txt")
 
 
 if __name__ == '__main__':
   main()
+  Scan.testando()
+
   
   
-# TODO: erro 2 - falta de CIDR(Classless Inter-Doamin Routing) /24 /23 ...
+#TODO: erro 2 - falta de CIDR(Classless Inter-Doamin Routing) /24 /23 ...
 #      erro 3 - IPs Invalidos 
 #      erro 4 - Falta de modulos(nmap) - https://www.youtube.com/watch?v=ufOrfPQOKvU
