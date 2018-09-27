@@ -33,19 +33,19 @@ def main():
     "- A preguiça, o ócio e a recreação revigoravam as energias para a batalha."
                                                       """)
     print("Palamedes v0.1 - Teste segmentacao")
-    #erro 1 - falta de argumento    
+    # erro 1 - falta de argumento
     if len(sys.argv) == 2:
         ipv = filetoVector(sys.argv[1])
         
         print(Fore.GREEN + "Escopo:" + Style.RESET_ALL)
         print(ipv)
-        #validar o IP
-        #validateIp(ipv)
+        # validar o IP
+        # validateIp(ipv)
 
         print(p)
         exit()
     else:
-        print(Fore.RED + "\n[ERRO] - " + Style.RESET_ALL +"Insira um arquivo de texto")
+        print(Fore.RED + "\n[ERRO] - " + Style.RESET_ALL + "Insira um arquivo de texto")
         print("         Ex: python palamedes.py scope.txt")
 
 
@@ -53,6 +53,6 @@ if __name__ == '__main__':
   main()
   
   
-#TODO: erro 2 - falta de CIDR(Classless Inter-Doamin Routing) /24 /23 ...
+# TODO: erro 2 - falta de CIDR(Classless Inter-Doamin Routing) /24 /23 ...
 #      erro 3 - IPs Invalidos 
 #      erro 4 - Falta de modulos(nmap) - https://www.youtube.com/watch?v=ufOrfPQOKvU
