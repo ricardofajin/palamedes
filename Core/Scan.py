@@ -1,2 +1,2 @@
 def testando():
-    print('teste funfa!')
+    print('nmap!')
