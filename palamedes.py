@@ -1,41 +1,22 @@
 #/usr/bin/python3
-import socket
-from colorama import Fore, Style
-from Core import Scan
-from Utility import Parsers
+# coding=utf-8
+
+from Core import Scan, Threads
+from Utility import Parsers, Convertions, Banner
 
 
 def main():
-    print("""
-        ____        __                         __         
-       / __ \____ _/ /___ _____ ___  ___  ____/ /__  _____
-      / /_/ / __ `/ / __ `/ __ `__ \/ _ \/ __  / _ \/ ___/
-     / ____/ /_/ / / /_/ / / / / / /  __/ /_/ /  __(__  ) 
-    /_/    \__,_/_/\__,_/_/ /_/ /_/\___/\__,_/\___/____/  
-                                                          
-    "- A preguiça, o ócio e a recreação revigoravam as energias para a batalha."
-                                                      """)
-    print("Palamedes v0.2 - Teste segmentacao")
+    Banner.banner()
 
-    #erro 1 - falta de argumento
+    scope = []
+
+    # TODO: matriz[scopes][vlans]
     args = Parsers.getArgs()
+    for f in args.files:
+        scope.append(Convertions.filetoVector(f))
 
-    #TODO:
-
-    if args.files < 2:
-
-        ipv = filetoVector(sys.argv[1])
-        
-        print(Fore.GREEN + "Escopo:" + Style.RESET_ALL)
-        print(ipv)
-        #validar o IP
-        #validateIp(ipv)
-
-        print(p)
-
-    else:
-        print(Fore.RED + "\n[ERRO] - " + Style.RESET_ALL +"Insira um arquivo de texto")
-        print("         Ex: python palamedes.py scope.txt")
+    for t in scope:
+        Threads.multi(scope[t])
 
 
 if __name__ == '__main__':
