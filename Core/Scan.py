@@ -1,19 +1,39 @@
 import nmap
 from colorama import Fore, Style
+from Utility import Check, Make
 
-def tcp(IP):
+def tcp(IP,Folder,Interface):
     nm = nmap.PortScanner()
     print(Fore.GREEN + 'Scaning ' + IP + Style.RESET_ALL)
-    # Tenho fe que a pasta estara la :D
-    #aguardando checkDir() - Utility
-    nm.scan(IP, '1-65535', '-sV -sC -T3 -o /results/' + IP.replace('/','-') + '.txt')
 
-    print(nm.scaninfo())
-    print(nm.csv())
+    try:
+        Check.dir(Folder)
+    except:
+        Make.dir('results')
+        Folder = 'results'
+
+    nm.scan(IP, '1-65535', '-sV --open -sC -T3 -e ' + Interface + ' -oN ' + Folder + '/' + IP.replace('/', '-') + 'TCP_.txt')
+
     return
 
-def udp(IP):
-    print('nmap UDP!')
-    print('IP: ' + IP)
-    # TODO deixa pra dps u.u
-    return
+def udp(IP,Folder,Interface):
+    nm = nmap.PortScanner()
+    print(Fore.GREEN + 'Scaning ' + IP + Style.RESET_ALL)
+
+    try:
+        Check.dir(Folder)
+    except:
+        Make.dir('results')
+        Folder = 'results'
+
+    try:
+        nm.scan(IP, '1-65535', '-sV -sC -sU -T3 --open -e ' + Interface + ' -oN ' + Folder + '/' + IP.replace('/', '-') + 'UDP_.txt')
+    except nmap.nmap.PortScannerError as e:
+        e = str(e)
+        e = e.replace("'", "")
+        e = e.replace("\\nQUITTING!\\n", "")
+        print("[" + Fore.RED + "ERROR" + Style.RESET_ALL + "]" " - " + e)
+        exit()
+
+
+return
