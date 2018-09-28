@@ -1,7 +1,7 @@
 import os
 from colorama import Fore, Style
 
-def mkdir(dir):
+def dir(dir):
     try:
         os.mkdir(dir)
     except Exception as e:
