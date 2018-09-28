@@ -1,4 +1,6 @@
-import threading
+from multiprocessing import Process
 
-def multi(n, vfunctions):
-    #TODO: função para criar n threads
+def multi(vfunctions):
+    n = len(vfunctions)
+    for t in range(n):
+        Process(target=vfunctions[n]).start()
