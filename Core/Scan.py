@@ -14,7 +14,6 @@ def tcp(IP,Folder,Interface):
 
     nm.scan(IP, '1-65535', '-sV --open -sC -T3 -e ' + Interface + ' -oN ' + Folder + '/' + IP.replace('/', '-') + 'TCP_.txt')
 
-    return
 
 def udp(IP,Folder,Interface):
     nm = nmap.PortScanner()
@@ -34,6 +33,3 @@ def udp(IP,Folder,Interface):
         e = e.replace("\\nQUITTING!\\n", "")
         print("[" + Fore.RED + "ERROR" + Style.RESET_ALL + "]" " - " + e)
         exit()
-
-
-return
