@@ -8,4 +8,4 @@ def banner():
 
     "- A preguiça, o ócio e a recreação revigoravam as energias para a batalha."
                                                       """)
-    print("Palamedes v0.2 - Teste segmentacao")
+    print("Palamedes v0.3 - Teste segmentacao")
