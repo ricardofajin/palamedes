@@ -10,7 +10,7 @@ def tcp(ip,interface,folder='results'):
         try:
             nm = nmap.PortScanner()
             param = '-sV --open -sC -T3 -e ' + interface + ' -o ' + folder + '/' + ip.replace('/', '-') + '_TCP.txt'
-            nm.scan(ip, '445', param)
+            nm.scan(ip, '1-65535', param)
         except Exception as e:
             e = str(e)
             e = e.replace("'", "")
@@ -35,7 +35,7 @@ def udp(ip,interface,folder='results'):
         nm = nmap.PortScanner()
         try:
             param = '-sV -sC -sU -T3 --open -e ' + interface + ' -oN ' + folder + '/' + ip.replace('/', '-') + '_UDP.txt'
-            nm.scan(ip, '445', param)
+            nm.scan(ip, '1-65535', param)
 
         except nmap.nmap.PortScannerError as e:
             e = str(e)
