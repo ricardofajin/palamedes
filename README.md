@@ -6,7 +6,6 @@ Script em python para agilizar testes de segmentação. Para execução do Scrip
 Ex:
 
 - palamedes.py -e eth0 /tmp/scope1.txt /tmp/scope2.txt
-
 - palamedes.py -p /tmp/folder_results -e eth0 /tmp/scope1.txt /tmp/scope2.txt
 
 ### Usage 
