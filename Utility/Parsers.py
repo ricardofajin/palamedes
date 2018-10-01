@@ -6,3 +6,11 @@ def getArgs():
     parser.add_argument("-p", "--path", default='results', help='Set the path to save the results (Default= results)')
     parser.add_argument("-e", "--interface", help='Set the network interface')
     return parser.parse_args()
+
+
+def txtfiletoName(fileName):
+    if '.txt' in fileName:
+        name = fileName.split('.txt')[0]
+        return name
+    else:
+        return fileName
