@@ -18,7 +18,7 @@ Ex:
 
     "- A preguiça, o ócio e a recreação revigoravam as energias para a batalha."
                                                       
-Palamedes v0.3 - Teste segmentacao
+Palamedes v1.0 - Teste segmentacao
 usage: palamedes.py [-h] [-p PATH] [-e INTERFACE] scopeFiles [scopeFiles ...]
 
 positional arguments:
