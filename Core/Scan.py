@@ -1,16 +1,12 @@
 import nmap
 import threading
 from colorama import Fore, Style
-from Utility import Check, Make, Loading
+from Utility import Loading
 
-def tcp(ip,folder,interface):
+def tcp(ip,interface,folder='results'):
     nm = nmap.PortScanner()
     print('[' + Fore.GREEN + 'TCP - SCANNING' + Style.RESET_ALL + '] - ' + ip)
 
-    try:
-        Check.dir(folder)
-    except:
-        Make.dir('results')
     try:
 
         the_process = threading.Thread(name='Scan TCP - Palapica 8==D', target=nm.scan(ip, '1-65535', '-sV --open -sC -T3 -e ' + interface + ' -oN ' + folder + '/' + ip.replace('/', '-') + 'TCP_.txt'))
@@ -28,11 +24,6 @@ def tcp(ip,folder,interface):
 def udp(ip,interface,folder='results'):
     nm = nmap.PortScanner()
     print('[' + Fore.BLUE + 'UDP - SCANNING' + Style.RESET_ALL + '] - ' + ip)
-
-    try:
-        Check.dir(folder)
-    except:
-        Make.dir('results')
 
     try:
 
