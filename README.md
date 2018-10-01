@@ -4,6 +4,7 @@
 Script em python para agilizar testes de segmentação. Para execução do Script, será necessário informar os escopos de testes(em formato de VLAN ex: 192.168.0.0/24, 10.0.0.0/23, 172.16.0.0/16, ...) e a interface de rede. 
 
 Ex:
+
 palamedes.py -e eth0 /tmp/scope1.txt /tmp/scope2.txt
 palamedes.py -p /tmp/folder_results -e eth0 /tmp/scope1.txt /tmp/scope2.txt
 
