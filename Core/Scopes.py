@@ -10,10 +10,10 @@ class Scope:
         self.path = path
 
     def scan(self):
-        try:
-            Check.dir(str(self.path))
-        except:
-            Make.dir('results')
+        if Check.dir(str(self.path)):
+            pass
+        else:
+            Make.dir(str(self.path))
 
         for ip in self.vlans:
             Scan.tcp(ip, self.interface, self.path)
