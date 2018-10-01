@@ -8,8 +8,8 @@ def tcp(ip,interface,folder='results'):
     print('[' + Fore.GREEN + 'TCP - SCANNING' + Style.RESET_ALL + '] - ' + ip)
 
     try:
-
-        the_process = threading.Thread(name='Scan TCP - Palapica 8==D', target=nm.scan(ip, '1-65535', '-sV --open -sC -T3 -e ' + interface + ' -oN ' + folder + '/' + ip.replace('/', '-') + 'TCP_.txt'))
+        param = '-sV --open -sC -T3 -e ' + interface + ' -o ' + folder + '/' + ip.replace('/', '-') + '_TCP.txt'
+        the_process = threading.Thread(name='Scan TCP - Palapica 8==D', target=nm.scan(ip, '1-65535', param))
         the_process.start()
 
         while the_process.isAlive():
@@ -26,8 +26,8 @@ def udp(ip,interface,folder='results'):
     print('[' + Fore.BLUE + 'UDP - SCANNING' + Style.RESET_ALL + '] - ' + ip)
 
     try:
-
-        the_process = threading.Thread(name='Scan TCP - Palapica 8==D', target=nm.scan(ip, '1-65535', '-sV -sC -sU -T3 --open -e ' + interface + ' -oN ' + folder + '/' + ip.replace('/', '-') + 'UDP_.txt'))
+        param = '-sV -sC -sU -T3 --open -e ' + interface + ' -oN ' + folder + '/' + ip.replace('/', '-') + '_UDP.txt'
+        the_process = threading.Thread(name='Scan TCP - Palapica 8==D', target=nm.scan(ip, '1-65535', param))
         the_process.start()
 
         while the_process.isAlive():
