@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6851487f-b23e-4a93-b40a-2127d9734829" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Scan.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Scan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utility/Banner.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utility/Banner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utility/Loading.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utility/Loading.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utility/Make.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utility/Make.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,27 +69,27 @@
           <entry key="Python Console" value="545" />
           <entry key="dummy" value="2" />
           <entry key="md" value="532" />
-          <entry key="py" value="2245" />
+          <entry key="py" value="2408" />
           <entry key="test_thread" value="456" />
-          <entry key="txt" value="310" />
+          <entry key="txt" value="353" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="532" />
-          <entry key="PLAIN_TEXT" value="312" />
-          <entry key="Python" value="3246" />
+          <entry key="PLAIN_TEXT" value="355" />
+          <entry key="Python" value="3409" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="18" />
+          <entry key="py" value="19" />
           <entry key="test_thread" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="19" />
+          <entry key="Python" value="20" />
         </counts>
       </usages-collector>
     </session>
@@ -114,12 +111,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Core/Scan.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="53" column="30" lean-forward="true" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
+            <state relative-caret-position="555">
+              <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-                <marker date="1538429365082" expanded="true" signature="90:91" ph="..." />
-                <marker date="1538429365082" expanded="true" signature="676:677" ph="..." />
+                <marker date="1538429652568" expanded="true" signature="90:91" ph="..." />
+                <marker date="1538429652568" expanded="true" signature="680:681" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Utility/Make.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="106" selection-start-line="9" selection-start-column="106" selection-end-line="9" selection-end-column="106" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -158,11 +167,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Utility/Banner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+            <state>
+              <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -211,8 +220,9 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/test_thread" />
         <option value="$PROJECT_DIR$/Utility/Loading.py" />
-        <option value="$PROJECT_DIR$/Core/Scan.py" />
         <option value="$PROJECT_DIR$/Utility/Banner.py" />
+        <option value="$PROJECT_DIR$/Core/Scan.py" />
+        <option value="$PROJECT_DIR$/Utility/Make.py" />
       </list>
     </option>
   </component>
@@ -233,11 +243,6 @@
             <path>
               <item name="palamedes" type="b2602c69:ProjectViewProjectNode" />
               <item name="palamedes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="palamedes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="palamedes" type="462c0819:PsiDirectoryNode" />
-              <item name="Core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="palamedes" type="b2602c69:ProjectViewProjectNode" />
@@ -605,7 +610,21 @@
       <option name="project" value="LOCAL" />
       <updated>1538422783538</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="v1.0 Ajustes bacaninhas :tada:">
+      <created>1538429500274</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1538429500274</updated>
+    </task>
+    <task id="LOCAL-00014" summary="v1.0 Ajustes bacaninhas :tada:">
+      <created>1538429663162</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1538429663162</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView">
@@ -710,7 +729,8 @@
     <MESSAGE value="v0.2 palamedes.py main logic almost done; Banner.py created" />
     <MESSAGE value="v0.3 README.md: So pra parecer iradiiissimo" />
     <MESSAGE value="v0.5 Scan.py: so pq o Dev achava que o erro era meu o.O'" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.5 Scan.py: so pq o Dev achava que o erro era meu o.O'" />
+    <MESSAGE value="v1.0 Ajustes bacaninhas :tada:" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.0 Ajustes bacaninhas :tada:" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -750,13 +770,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py" />
-    <entry file="file://$PROJECT_DIR$/Utility/Make.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Core/Threads.py" />
     <entry file="file://$PROJECT_DIR$/Utility/Convertions.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -799,7 +812,6 @@
           <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1538427696925" expanded="true" signature="155:187" ph="..." />
           </folding>
         </state>
       </provider>
@@ -847,22 +859,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Utility/Banner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Core/Scan.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" column="30" lean-forward="true" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
+        <state relative-caret-position="555">
+          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1538429365082" expanded="true" signature="90:91" ph="..." />
-            <marker date="1538429365082" expanded="true" signature="676:677" ph="..." />
+            <marker date="1538429652568" expanded="true" signature="90:91" ph="..." />
+            <marker date="1538429652568" expanded="true" signature="680:681" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utility/Banner.py">
+    <entry file="file://$PROJECT_DIR$/Utility/Make.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+        <state relative-caret-position="135">
+          <caret line="9" column="106" selection-start-line="9" selection-start-column="106" selection-end-line="9" selection-end-column="106" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
