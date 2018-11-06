@@ -32,6 +32,7 @@ optional arguments:
 ```
 
 ## Dependencias
+Algumas das dependências necessárias para execução da ferramenta podem ser encontradas na pasta Dependencies.
 - python-nmap
 
 ```
@@ -48,3 +49,15 @@ python setup.py install
 ```
 
 * Referência -  https://xael.org/pages/python-nmap-en.html
+
+- python-colorama
+
+```
+git clone https://github.com/tartley/colorama.git
+cd colorama
+python setup.py install
+```
+
+```
+pip install colorama
+```
